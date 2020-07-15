@@ -12,6 +12,7 @@ npm install
 
 ## Run in development
 ```
+npx sequelize db:create
 npm run dev
 ```
 
