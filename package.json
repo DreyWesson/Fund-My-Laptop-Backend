@@ -4,8 +4,8 @@
   "description": "Peer-to-peer lending",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config server dotenv_config_path=./.env.production",
-    "dev": "nodemon -r dotenv/config server dotenv_config_path=./.env.development",
+    "start": "node -r dotenv/config src/www dotenv_config_path=./.env.production",
+    "dev": "nodemon -r dotenv/config src/www dotenv_config_path=./.env.development",
     "test": "jest"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4"
   }
 }
