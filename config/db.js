@@ -1,16 +1,17 @@
 const { Sequelize } = require('sequelize');
+const config = require('./config.json');
 require('dotenv').config();
 
-const {
-  DB_NAME, DB_USERNAME, DB_PASSWORD, DB_URL, NODE_ENV,
-} = process.env;
+const { NODE_ENV } = process.env;
+
+const db = config[NODE_ENV];
 
 let sequelize;
 
 if (NODE_ENV === 'production') {
-  sequelize = new Sequelize(DB_URL);
+  sequelize = new Sequelize(db.url);
 } else {
-  sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD || '', {
+  sequelize = new Sequelize(db.database, db.username, db.password, {
     dialect: 'postgres',
     host: 'localhost',
   });
