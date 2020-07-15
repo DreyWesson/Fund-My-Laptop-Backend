@@ -10,8 +10,8 @@ let sequelize;
 if (NODE_ENV === 'production') {
   sequelize = new Sequelize(DB_URL);
 } else {
-  sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD, {
-    dialect: 'mysql',
+  sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD || '', {
+    dialect: 'postgres',
     host: 'localhost',
   });
 }
