@@ -4,6 +4,8 @@
   "description": "Peer-to-peer lending",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
+    "dev": "nodemon server", 
     "test": "jest"
   },
   "repository": {
@@ -21,11 +23,13 @@
   },
   "homepage": "https://github.com/HNGi7-Team-Falcon/Fund-My-Laptop-Backend#readme",
   "dependencies": {
+    "bunyan": "^1.8.14",
     "express": "^4.17.1"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
   }
 }
