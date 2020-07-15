@@ -11,6 +11,7 @@ const server = createServer(app);
 server.listen(PORT, async () => {
   logger.log(`Serving at http://localhost:${PORT} for ${process.env.NODE_ENV}`);
   await sequelize.authenticate();
+  await sequelize.sync({ force: true });
   logger.log('Connection to database established successfully');
 });
 
