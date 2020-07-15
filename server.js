@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const logger = require('./src/utils/logger');
+const logger = require('./utils/logger');
 
 const app = express();
 

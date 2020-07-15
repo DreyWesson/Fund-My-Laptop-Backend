@@ -4,8 +4,8 @@
   "description": "Peer-to-peer lending",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config src/www dotenv_config_path=./.env.production",
-    "dev": "nodemon -r dotenv/config src/www dotenv_config_path=./.env.development",
+    "start": "node -r dotenv/config bin/www dotenv_config_path=./.env.production",
+    "dev": "nodemon -r dotenv/config bin/www dotenv_config_path=./.env.development",
     "test": "jest"
   },
   "repository": {
