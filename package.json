@@ -4,8 +4,8 @@
   "description": "Peer-to-peer lending",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server", 
+    "start": "node -r dotenv/config server dotenv_config_path=./.env.production",
+    "dev": "nodemon -r dotenv/config server dotenv_config_path=./.env.development",
     "test": "jest"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/HNGi7-Team-Falcon/Fund-My-Laptop-Backend#readme",
   "dependencies": {
     "bunyan": "^1.8.14",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
