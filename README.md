@@ -14,3 +14,8 @@ npm install
 ```
 npm run dev
 ```
+
+## Note
+This project uses Sequelize ORM powered by PostgreSQL. 
+If you're familiar with MondoDB then you'll grab it easily
+Visit [here](https://sequelize.org) to see the documentation.
