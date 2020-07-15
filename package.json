@@ -1,0 +1,31 @@
+{
+  "name": "fund-my-laptop-backend",
+  "version": "1.0.0",
+  "description": "Peer-to-peer lending",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HNGi7-Team-Falcon/Fund-My-Laptop-Backend.git"
+  },
+  "keywords": [
+    "hng",
+    "peer-to-peer-lending"
+  ],
+  "author": "Team Phoenix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HNGi7-Team-Falcon/Fund-My-Laptop-Backend/issues"
+  },
+  "homepage": "https://github.com/HNGi7-Team-Falcon/Fund-My-Laptop-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
